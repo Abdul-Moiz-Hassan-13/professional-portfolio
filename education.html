@@ -27,16 +27,16 @@
   </script>
 
   <script>
-    (function () {
-      const savedTheme = localStorage.getItem('theme')
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      (function () {
+        const savedTheme = localStorage.getItem('theme')
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 
-      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-        document.documentElement.classList.add('dark')
-      } else {
-        document.documentElement.classList.remove('dark')
-      }
-    })()
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+      })()
   </script>
 
   <script>
@@ -146,21 +146,22 @@
     <div class="space-y-12">
 
       <div
-        class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+        class="relative bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01] overflow-hidden">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8">
+
+          <div class="flex-shrink-0">
+            <a href="https://www.nu.edu.pk/" target="_blank"
+              class="w-24 h-24 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-110 block">
+              <img src="assets/Fast.png" alt="FAST University Logo" class="w-full h-full object-contain">
+            </a>
+          </div>
 
           <div class="flex-1">
-            <div class="flex items-center gap-6 mb-6">
-              <a href="https://www.nu.edu.pk/" target="_blank" 
-                class="w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 hover:scale-110">
-                <img src="assets/Fast.png" alt="FAST University Logo" class="w-full h-full object-contain">
-              </a>
-              <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">National University of
-                  Computer and Emerging Sciences</h2>
-                <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-1">Bachelor of Science - BS, Software
-                  Engineering</p>
-              </div>
+            <div class="mb-6">
+              <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">National University of
+                Computer and Emerging Sciences</h2>
+              <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-1">Bachelor of Science - BS, Software
+                Engineering</p>
             </div>
 
             <div class="mt-8 space-y-3">
@@ -170,16 +171,20 @@
               </div>
               <div class="flex items-center">
                 <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">CGPA:</span>
-                <span class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">3.44</span>
+                <span
+                  class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">3.44</span>
               </div>
               <div class="flex items-center">
-                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Activities:</span>
+                <span
+                  class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Activities:</span>
                 <span class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300">Cricket, Tabletennis</span>
               </div>
-              <div class="flex items-center">
-                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Societies:</span>
+              <div class="grid grid-cols-[100px,1fr] gap-x-2 items-start">
+                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400">
+                  Societies:
+                </span>
                 <a href="https://www.instagram.com/ses.isb?igsh=NXMyOG1hN3g0dXRo" target="_blank"
-                  class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline transition-colors duration-300">
+                  class="text-xl md:text-xl text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline transition-colors duration-300">
                   Software Engineering Society
                 </a>
               </div>
@@ -187,28 +192,34 @@
           </div>
 
           <div class="hidden md:block relative">
-            <div class="w-4 h-4 bg-indigo-500 rounded-full animate-pulse-slow ring-2 ring-indigo-300 dark:ring-indigo-700"></div>
-            <div class="absolute top-4 left-1/2 -translate-x-1/2 w-0.5 h-[calc(100%+3rem)] bg-gradient-to-b from-indigo-300 to-indigo-500 dark:from-indigo-700 dark:to-indigo-900"></div>
+            <div
+              class="w-4 h-4 bg-indigo-500 rounded-full animate-pulse-slow ring-2 ring-indigo-300 dark:ring-indigo-700">
+            </div>
+            <div
+              class="absolute top-4 left-1/2 -translate-x-1/2 w-0.5 h-[calc(100%-12.5rem)] bg-gradient-to-b from-indigo-300 to-indigo-500 dark:from-indigo-700 dark:to-indigo-900">
+            </div>
           </div>
 
         </div>
+
       </div>
 
       <div
-        class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+        class="relative bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01] overflow-hidden">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8">
+
+          <div class="flex-shrink-0">
+            <a href="https://www.facebook.com/RootsIvyWestridgeCampus/" target="_blank"
+              class="w-24 h-24 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-110 block">
+              <img src="assets/Roots.png" alt="Roots IVY A Levels Logo" class="w-full h-full object-contain">
+            </a>
+          </div>
 
           <div class="flex-1">
-            <div class="flex items-center gap-6 mb-6">
-              <a href="https://www.facebook.com/RootsIvyWestridgeCampus/" target="_blank"
-                class="w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 hover:scale-110">
-                <img src="assets/Roots.png" alt="Roots IVY A Levels Logo" class="w-full h-full object-contain">
-              </a>
-              <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">Roots IVY International
-                  School</h2>
-                <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-1">A Levels</p>
-              </div>
+            <div class="mb-6">
+              <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">Roots IVY International
+                School</h2>
+              <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-1">A Levels</p>
             </div>
 
             <div class="mt-8 space-y-3">
@@ -218,39 +229,48 @@
               </div>
               <div class="flex items-center">
                 <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Grade:</span>
-                <span class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">3A*'s</span>
+                <span
+                  class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">3A*'s</span>
               </div>
-              <div class="flex items-center">
-                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Activities:</span>
-                <span class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300">Olympiads, Football,
-                  Tabletennis, Basketball, Volleyball, Badminton</span>
+              <div class="grid grid-cols-[100px,1fr] gap-x-2 items-start">
+                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400">
+                  Activities:
+                </span>
+                <span class="text-xl md:text-xl text-slate-700 dark:text-slate-300">
+                  Olympiads, Football, Tabletennis, Basketball, Volleyball, Badminton
+                </span>
               </div>
             </div>
           </div>
 
           <div class="hidden md:block relative">
-            <div class="w-4 h-4 bg-indigo-500 rounded-full animate-pulse-slow ring-2 ring-indigo-300 dark:ring-indigo-700"></div>
-            <div class="absolute top-4 left-1/2 -translate-x-1/2 w-0.5 h-[calc(100%+3rem)] bg-gradient-to-b from-indigo-300 to-indigo-500 dark:from-indigo-700 dark:to-indigo-900"></div>
+            <div
+              class="w-4 h-4 bg-indigo-500 rounded-full animate-pulse-slow ring-2 ring-indigo-300 dark:ring-indigo-700">
+            </div>
+            <div
+              class="absolute top-4 left-1/2 -translate-x-1/2 w-0.5 h-[calc(100%-10rem)] bg-gradient-to-b from-indigo-300 to-indigo-500 dark:from-indigo-700 dark:to-indigo-900">
+            </div>
           </div>
 
         </div>
       </div>
 
       <div
-        class="bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
-        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+        class="relative bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01] overflow-hidden">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8">
+
+          <div class="flex-shrink-0">
+            <a href="https://www.facebook.com/RootsIvyWestridgeCampus/" target="_blank"
+              class="w-24 h-24 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden transition-transform duration-300 hover:scale-110 block">
+              <img src="assets/Roots.png" alt="Roots IVY O Levels Logo" class="w-full h-full object-contain">
+            </a>
+          </div>
 
           <div class="flex-1">
-            <div class="flex items-center gap-6 mb-6">
-              <a href="https://www.facebook.com/RootsIvyWestridgeCampus/" target="_blank"
-                class="w-16 h-16 md:w-20 md:h-20 transition-transform duration-300 hover:scale-110">
-                <img src="assets/Roots.png" alt="Roots IVY O Levels Logo" class="w-full h-full object-contain">
-              </a>
-              <div>
-                <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">Roots IVY International
-                  School</h2>
-                <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-1">O Levels</p>
-              </div>
+            <div class="mb-6">
+              <h2 class="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-200">Roots IVY International
+                School</h2>
+              <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mt-1">O Levels</p>
             </div>
 
             <div class="mt-8 space-y-3">
@@ -260,19 +280,28 @@
               </div>
               <div class="flex items-center">
                 <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Grade:</span>
-                <span class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">6A*'s, 2A's</span>
+                <span
+                  class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300 font-bold bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">6A*'s,
+                  2A's</span>
               </div>
-              <div class="flex items-center">
-                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 min-w-[100px]">Activities:</span>
-                <span class="ml-2 text-xl md:text-xl text-slate-700 dark:text-slate-300">Olympiads, Football,
-                  Tabletennis, Badminton</span>
+              <div class="grid grid-cols-[100px,1fr] gap-x-2 items-start">
+                <span class="text-xl font-semibold text-indigo-600 dark:text-indigo-400">
+                  Activities:
+                </span>
+                <span class="text-xl text-slate-700 dark:text-slate-300">
+                  Olympiads, Football, Tabletennis, Badminton
+                </span>
               </div>
             </div>
           </div>
 
           <div class="hidden md:block relative">
-            <div class="w-4 h-4 bg-indigo-500 rounded-full animate-pulse-slow ring-2 ring-indigo-300 dark:ring-indigo-700"></div>
-            <div class="absolute top-4 left-1/2 -translate-x-1/2 w-0.5 h-[calc(100%+3rem)] bg-gradient-to-b from-indigo-300 to-indigo-500 dark:from-indigo-700 dark:to-indigo-900"></div>
+            <div
+              class="w-4 h-4 bg-indigo-500 rounded-full animate-pulse-slow ring-2 ring-indigo-300 dark:ring-indigo-700">
+            </div>
+            <div
+              class="absolute top-4 left-1/2 -translate-x-1/2 w-0.5 h-[calc(100%-10rem)] bg-gradient-to-b from-indigo-300 to-indigo-500 dark:from-indigo-700 dark:to-indigo-900">
+            </div>
           </div>
 
         </div>

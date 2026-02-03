@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "format-html",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"$ErrorActionPreference = 'Stop'; $path = 'd:\\Portfolio Website\\projects.html'; (Get-Content $path) -replace '\\r?\\n', \"`r`n\" | Set-Content -NoNewline $path; Write-Host 'Normalized line endings.'"
+			],
+			"group": "build"
+		}
+	]
+}
