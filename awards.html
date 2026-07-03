@@ -33,29 +33,29 @@
         }
     </style>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(() => {
-        document.body.classList.remove('opacity-0');
-      }, 50);
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(() => {
+                document.body.classList.remove('opacity-0');
+            }, 50);
 
-      document.querySelectorAll('nav a[href]').forEach(link => {
-        const href = link.getAttribute('href');
+            document.querySelectorAll('nav a[href]').forEach(link => {
+                const href = link.getAttribute('href');
 
-        if (href && !href.startsWith('#') && !href.startsWith('http')) {
-          link.addEventListener('click', function (e) {
-            if (link.getAttribute('href') !== window.location.pathname.split('/').pop()) {
-              e.preventDefault();
-              document.body.classList.add('opacity-0');
-              setTimeout(() => {
-                window.location.href = href;
-              }, 400);
-            }
-          });
-        }
-      });
-    });
-  </script>
+                if (href && !href.startsWith('#') && !href.startsWith('http')) {
+                    link.addEventListener('click', function (e) {
+                        if (link.getAttribute('href') !== window.location.pathname.split('/').pop()) {
+                            e.preventDefault();
+                            document.body.classList.add('opacity-0');
+                            setTimeout(() => {
+                                window.location.href = href;
+                            }, 400);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 
 </head>
 
@@ -469,12 +469,71 @@
 
                     <div class="flex-1">
                         <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                            AWS Academy Graduate - Cloud Foundations - Training Badge
+                        </h3>
+                        <p class="text-slate-500 dark:text-slate-400 mt-1">
+                            Amazon Web Services (AWS) · Issued Jun 2026
+                        </p>
+                        <a href="https://www.credly.com/badges/0eb73e7c-6092-4cf6-bff0-57e5e948744d/public_url"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show
+                            credential</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div
+                class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
+
+                <div class="flex flex-col md:flex-row gap-8">
+
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-24 h-24 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden">
+                            <img src="assets/AWS.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+                            AWS Academy Graduate - Cloud Web Application Builder - Training Badge
+                        </h3>
+                        <p class="text-slate-500 dark:text-slate-400 mt-1">
+                            Amazon Web Services (AWS) · Issued May 2026
+                        </p>
+                        <a href="https://www.credly.com/badges/69f09a0d-c2c0-4944-b866-5c5e532d1145/public_url"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show
+                            credential</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div
+                class="bg-white dark:bg-slate-900 rounded-xl p-8 shadow-lg border border-slate-200 dark:border-slate-800 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
+
+                <div class="flex flex-col md:flex-row gap-8">
+
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-24 h-24 bg-slate-100 dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center overflow-hidden">
+                            <img src="assets/AWS.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                    </div>
+
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
                             AWS Cloud Quest: Cloud Practitioner - Training Badge
                         </h3>
                         <p class="text-slate-500 dark:text-slate-400 mt-1">
                             Amazon Web Services (AWS) · Issued Apr 2026
                         </p>
-                        <a href="https://www.credly.com/badges/f885fde6-8432-4473-b043-fdf2aaa79228/linked_in_profile" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show credential</a>
+                        <a href="https://www.credly.com/badges/f885fde6-8432-4473-b043-fdf2aaa79228/public_url"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show
+                            credential</a>
                     </div>
 
                 </div>
@@ -499,7 +558,10 @@
                         <p class="text-slate-500 dark:text-slate-400 mt-1">
                             Google · Issued Jul 2025
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/EY67PKMX0EO6" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show credential</a>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/EY67PKMX0EO6" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show
+                            credential</a>
                     </div>
 
                 </div>
@@ -524,7 +586,10 @@
                         <p class="text-slate-500 dark:text-slate-400 mt-1">
                             University of Michigan · Issued Jul 2025
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/F2L4DOIGO1KM" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show credential</a>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/F2L4DOIGO1KM" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show
+                            credential</a>
                     </div>
 
                 </div>
@@ -549,7 +614,10 @@
                         <p class="text-slate-500 dark:text-slate-400 mt-1">
                             Coursera · Issued Mar 2023
                         </p>
-                        <a href="https://www.coursera.org/account/accomplishments/verify/MV4PDG4UQYGX" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show credential</a>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/MV4PDG4UQYGX" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-indigo-600 dark:text-indigo-400 hover:underline text-sm mt-2 inline-block">Show
+                            credential</a>
                     </div>
 
                 </div>
