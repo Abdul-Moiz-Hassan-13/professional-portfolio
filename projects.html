@@ -152,7 +152,7 @@
           </p>
         </div>
 
-        <div class="mb-10">
+        <div class="mb-10 border-t border-slate-200 dark:border-slate-800 pt-8">
           <h4 class="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
             <i class="fa-solid fa-circle-info"></i> Project Overview
           </h4>
@@ -166,8 +166,7 @@
           </p>
         </div>
 
-
-        <div class="mt-12">
+        <div class="mt-12 border-t border-slate-200 dark:border-slate-800 pt-8">
           <h4 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 mb-8 flex items-center gap-2">
             <i class="fa-solid fa-gears"></i> Workflow & Key Features
           </h4>
@@ -365,6 +364,18 @@
               </div>
             </div>
 
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-slate-200 dark:border-slate-800 pt-8">
+          <h4 class="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-users"></i> Other Contributors
+          </h4>
+          <div class="text-lg text-slate-600 dark:text-slate-300">
+            <a href="https://www.linkedin.com/in/hassaan-mansur" target="_blank"
+              class="hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">Hassaan Mansur</a>,
+            <a href="https://www.linkedin.com/in/muhammad-pasha-64269b361/" target="_blank"
+              class="hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">Muhammad Pasha</a>
           </div>
         </div>
 
@@ -671,7 +682,7 @@
               <h4 class="text-lg tracking-wide font-semibold text-indigo-600 dark:text-indigo-400 mb-4">
                 Other Contributors
               </h4>
-              <div class="flex flex-wrap gap-2">
+              <div class="text-lg text-slate-600 dark:text-slate-300">
                 ${project.contributors.map(contributor => {
         const linkedInLinks = {
           'Hassaan Mansur': 'https://www.linkedin.com/in/hassaan-mansur',
@@ -682,10 +693,8 @@
           'Muhammad Junaid': 'https://www.linkedin.com/in/thecreativejnd/'
         };
         const link = linkedInLinks[contributor] || '#';
-        return `<a href="${link}" target="_blank" class="text-lg text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">
-                            ${contributor}
-                          </a>`;
-      }).join(',')}
+        return `<a href="${link}" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">${contributor}</a>`;
+      }).join(', ')}
               </div>
             </div>
           ` : ''}
